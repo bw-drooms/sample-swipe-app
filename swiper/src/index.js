@@ -5,7 +5,7 @@ import Swipeable from "react-swipy";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import NavBar from "./components/BtmNavBar";
-
+import TopNav from "./components/TopNav"
 const appStyles = {
   height: "100%",
   display: "flex",
@@ -21,7 +21,7 @@ const wrapperStyles = { position: "relative", width: "250px", height: "250px" };
 const actionsStyles = {
   display: "flex",
   justifyContent: "space-between",
-  marginTop: 12
+  marginTop: 4
 };
 
 class App extends Component {
@@ -37,8 +37,10 @@ class App extends Component {
 
     return (
       <div style={appStyles}>
+      
         
         <div style={wrapperStyles}>
+                <TopNav/>
           {cards.length > 0 && (
             <div style={wrapperStyles}>
               <Swipeable
