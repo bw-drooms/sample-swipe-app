@@ -13,7 +13,7 @@ const appStyles = {
   flexDirection:"column",
   alignItems: "center",
   width: "100%",
-  minHeight: "100vh",
+  minHeight: "20vh",
   fontFamily: "sans-serif",
 };
 
